@@ -1,0 +1,60 @@
+class Animal {
+  public void animalSound() {
+    System.out.println("The animal makes a sound");
+  }
+}
+class Pig extends Animal {
+  public void animalSound() {
+    System.out.println("The pig says: wee wee");
+  }
+}
+class Dog extends Animal {
+  public void animalSound() {
+    System.out.println("The dog says: bow wow");
+  }
+}
+
+
+
+class Main {
+  public static void main(String[] args) {
+    Animal myAnimal = new Animal();
+    Animal myPig = new Pig();
+    Animal myDog = new Dog();
+        
+    myAnimal.animalSound();
+    myPig.animalSound();
+    myDog.animalSound();
+  }
+}
+
+
+
+class Overload
+{
+    void demo (int a)
+    {
+       System.out.println ("a: " + a);
+    }
+    void demo (int a, int b)
+    {
+       System.out.println ("a and b: " + a + "," + b);
+    }
+    double demo(double a) {
+       System.out.println("double a: " + a);
+       return a*a;
+    }
+}
+
+
+class Main {
+public static void main (String args [])
+    {
+        Overload Obj = new Overload();
+        double result;
+        Obj .demo(10);
+        Obj .demo(10, 20);
+        result = Obj .demo(5.5);
+        System.out.println("O/P : " + result);
+    }
+}
